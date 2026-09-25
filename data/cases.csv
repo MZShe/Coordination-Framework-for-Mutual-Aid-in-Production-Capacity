@@ -1,0 +1,7 @@
+case_id,participating_manufacturers,agent_count,demand_units,sale_price_cny_per_unit,deadline_days
+1,E;D,2,3000,3000,5
+2,E;D;G,3,3000,3000,5
+3,A;B;D,3,3000,3000,5
+4,A;B;C;D,4,3000,3000,5
+5,A;B;C;D;E;F;G;H;I;J,10,8000,3000,5
+6,A;B;C;D;E;F;G;H;I;J;K;L;M;N;O;P;Q;R;S;T,20,15000,3000,5

@@ -1,0 +1,66 @@
+{
+  "model": {
+    "identifier": "qwen3-8b",
+    "deployment_backend": "Alibaba Cloud DashScope OpenAI-compatible API",
+    "framework": "LangChain",
+    "tool_2_uses_same_model_client": true
+  },
+  "inference_parameters": {
+    "temperature": 0.3,
+    "top_p": 0.8,
+    "maximum_output_length_tokens": 8192
+  },
+  "training_hardware": "NVIDIA RTX 3090 GPU",
+  "training": {
+    "actor_and_critic_hidden_dimensions": [
+      256,
+      128
+    ],
+    "transformer_encoder_layers": 1,
+    "transformer_hidden_dimension": 64,
+    "optimizer": "Adam",
+    "actor_learning_rate": 0.0002,
+    "critic_learning_rate": 0.001,
+    "replay_buffer_capacity": 1000000,
+    "batch_size": 128,
+    "soft_update_coefficient": 0.005,
+    "discount_factor": 0.96,
+    "n_step_return_horizon": 10,
+    "policy_delay": 2,
+    "training_episodes": 200,
+    "negotiation_rounds_per_episode": 10,
+    "exploration_epsilon": {
+      "initial": 1.0,
+      "decay": 0.997,
+      "minimum": 0.05
+    },
+    "exploration_noise_standard_deviation": {
+      "initial": 0.1,
+      "decay": 0.99
+    },
+    "independent_runs_per_case": 5,
+    "reward_weights": {
+      "profit": 0.2,
+      "revision_penalty": 0.25,
+      "instantaneous_credit": 0.45,
+      "cumulative_credit": 0.1
+    },
+    "asymmetric_loss_coefficients": {
+      "kappa1": 3,
+      "kappa2": 1
+    },
+    "credit_coefficients": {
+      "wc": 10,
+      "omega_t": 0.5,
+      "omega_s": -0.2
+    },
+    "temporal_window_size_k": 3
+  },
+  "random_seeds": [
+    18,
+    42,
+    79,
+    134,
+    158
+  ]
+}
