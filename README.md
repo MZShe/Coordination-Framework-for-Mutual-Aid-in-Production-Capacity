@@ -13,7 +13,7 @@ This repository contains the supporting materials for the study **“A hierarchi
 | [`documentation/tool_interfaces.md`](documentation/tool_interfaces.md) | Input and output conventions, defaults, validation, and failure handling for the three tools. |
 | [`documentation/prompt_examples.md`](documentation/prompt_examples.md) | Representative English input examples corresponding to the evaluated screening and coordination demonstrations. |
 | [`reports/`](reports/) | The three reports evaluated in the report-assessment experiment. |
-| [`results/proposal_gap.csv`](results/proposal_gap.csv) | Relative proposal-gap values for five independent runs in Cases 1–6. |
+| [`results/proposal_gap.md`](results/proposal_gap.md) | Relative proposal-gap values for five independent runs in Cases 1–6, with the rounding convention used for presentation. |
 
 
 ## Citation
