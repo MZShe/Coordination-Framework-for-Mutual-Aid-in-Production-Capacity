@@ -3,6 +3,8 @@
     "identifier": "qwen3-8b",
     "deployment_backend": "Alibaba Cloud DashScope OpenAI-compatible API",
     "framework": "LangChain",
+    "access_mode": "hosted API service",
+    "local_checkpoint_loaded": false,
     "tool_2_uses_same_model_client": true
   },
   "inference_parameters": {
