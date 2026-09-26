@@ -5,6 +5,7 @@
     "framework": "LangChain",
     "access_mode": "hosted API service",
     "local_checkpoint_loaded": false,
+    "enable_thinking": false,
     "tool_2_uses_same_model_client": true
   },
   "inference_parameters": {
